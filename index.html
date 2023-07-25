@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hoja de Vida</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid orange;
+      }
+
+      th {
+        background-color: rgb(131, 131, 245);
+      }
+      .colspan {
+        text-align: center;
+      }
+
+      #ult-punto {
+        margin-top: 50px;
+      }
+    </style>
+
+    <h1>Hoja de Vida</h1>
+    <h2>Información General</h2>
+    <h3>Nombre y Apellido:</h3>
+    <p>Anyerson Castellanos</p>
+    <h3>Email:</h3>
+    <p>anyersonj@gmail.com</p>
+    <h3>Teléfono:</h3>
+    <p>+58 (412)-1481324</p>
+    <h3>Ubicación actual:</h3>
+    <p>Venezuela</p>
+    <h3>Información Adicional:</h3>
+    <button onclick="window.open('https://github.com/anyersonjcs/', '_blank')">
+      GitHub
+    </button>
+    <button
+      onclick="window.open('https://www.linkedin.com/in/anyerson-castellanos-b4548a110/', '_blank')"
+    >
+      LinkedIn
+    </button>
+
+    <h3>Experiencia</h3>
+    <ul>
+      <li>Ser profesional en programación</li>
+      <li>Crean un excelente entorno de trabajo</li>
+      <li>Alcanzar mis metas y objetivos</li>
+    </ul>
+
+    <table>
+      <tr>
+        <th>Habilidades Técnicas</th>
+        <th>Tecnologías</th>
+      </tr>
+      <tr>
+        <td rowspan="3">Desarrollo Web</td>
+        <td>JavaScript, CSS, HTML</td>
+      </tr>
+      <tr>
+        <td>FIREBASE</td>
+      </tr>
+      <tr>
+        <td>REACT</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th colspan="2" style="text-align:center">Intereses</th>
+      </tr>
+
+      <tr>
+        <td rowspan="4">Desarrollo de</td>
+        <td>Aplicaciones móviles</td>
+      </tr>
+      <tr>
+        <td>Software</td>
+      </tr>
+      <tr>
+        <td>Programas</td>
+      </tr>
+      <tr>
+        <td>Páginas webs</td>
+      </tr>
+    </table>
+
+    <div id="ult-punto">
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Contactar</button>
+      </form>
+    </div>
+  </body>
+</html>
